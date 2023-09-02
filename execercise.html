@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS exercises 18</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- BÀI 1 -->
+      <div class="form-group">
+        <h5>Nhập các số dương</h5>
+        <input
+          type="text"
+          name=""
+          id="input1"
+          class="form-control"
+          placeholder=""
+          value="4"
+          aria-describedby="helpId"
+        />
+        <input
+          type="text"
+          name=""
+          id="input2"
+          class="form-control"
+          placeholder=""
+          value="78"
+          aria-describedby="helpId"
+        />
+        <input
+          type="text"
+          name=""
+          id="input3"
+          class="form-control"
+          placeholder=""
+          value="15"
+          aria-describedby="helpId"
+        />
+        <button class="btn btn-primary" onclick="bai1()">Kết quả</button>
+        <h5 class="py-3" id="ketqua1"></h5>
+      </div>
+      <!-- BÀI 2 -->
+
+      <div class="form-group">
+        <label for="#">Bai2: . Đếm có bao nhiêu số dương trong mảng.</label>
+        <h5>Nhập các số nguyên</h5>
+        <input
+          type="text"
+          name=""
+          id="Input1"
+          class="form-control"
+          placeholder=""
+          value="4"
+          aria-describedby="helpId"
+        />
+        <input
+          type="text"
+          name=""
+          id="Input2"
+          class="form-control"
+          placeholder=""
+          value="-78"
+          aria-describedby="helpId"
+        />
+        <input
+          type="text"
+          name=""
+          id="Input3"
+          class="form-control"
+          placeholder=""
+          value="25"
+          aria-describedby="helpId"
+        />
+        <button class="btn btn-primary" onclick="bai2()">Kết quả</button>
+        <h5 class="py-3" id="ketqua2"></h5>
+      </div>
+      <!-- BÀI 3 -->
+
+      <div class="form-group">
+        <label for="#">Bai3: Tìm số nhỏ nhất trong mảng</label>
+        <h5>Nhập các số nguyên</h5>
+
+        <input
+          type="text"
+          name=""
+          id="arrayBai3"
+          class="form-control"
+          placeholder="Các số cách nhau bằng dấu ','"
+          value="9,1,2,34,6,7"
+          aria-describedby="helpId"
+        />
+        <button class="btn btn-primary" onclick="bai3()">Kết quả</button>
+        <h5 class="py-3" id="ketqua3"></h5>
+      </div>
+      <!-- BÀI 4 -->
+
+      <div class="form-group">
+        <label for="#">Bai4: Tìm số dương nhỏ nhất trong mảng.</label>
+        <h5>Nhập các số nguyên</h5>
+        <input
+          type="text"
+          name=""
+          id="arrayBai4"
+          class="form-control"
+          placeholder="Các số cách nhau bằng dấu ','"
+          value="9,1,2,-34,6,-7"
+          aria-describedby="helpId"
+        />
+        <button class="btn btn-primary" onclick="bai4()">Kết quả</button>
+        <h5 class="py-3" id="ketqua4"></h5>
+      </div>
+
+      <!-- BÀI 5 -->
+      <div class="form-group">
+        <label for="#"
+          >Bai5: Tìm số chẵn cuối cùng trong mảng. Nếu mảng không có giá trị
+          chẵn thì trả về -1.</label
+        >
+        <h5>Nhập các số nguyên</h5>
+        <input
+          type="text"
+          name=""
+          id="arrayBai5"
+          class="form-control"
+          placeholder="Các số cách nhau bằng dấu ','"
+          value="9,1,2,-34,6,-7"
+          aria-describedby="helpId"
+        />
+        <button class="btn btn-primary" onclick="bai5()">Kết quả</button>
+        <h5 class="py-3" id="ketqua5"></h5>
+      </div>
+
+      <!-- BÀI 6 -->
+      <div class="form-group">
+        <label for="#"
+          >Bài 6: Đổi chỗ 2 giá trị trong mảng theo vị trí (vị trí bắt đầu 0)
+        </label>
+        <h5>Nhập mảng</h5>
+        <input
+          type="text"
+          name=""
+          id="arrayBai6"
+          class="form-control"
+          value="9,1,2,23,6,76"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+        <h5>Vị trí 1</h5>
+        <input type="text" id="vitri1" class="form-control" value="2" />
+        <h5>Vị trí 2</h5>
+        <input type="text" id="vitri2" class="form-control" value="4" />
+
+        <button class="btn btn-primary" onclick="bai6()">Kết quả</button>
+        <h5 class="py-3" id="ketqua6"></h5>
+      </div>
+
+      <!-- BÀI 7 -->
+      <div class="form-group">
+        <label for="#">Bài 7: Sắp xếp mảng theo thứ tự tăng dần </label>
+        <h5>Nhập mảng</h5>
+        <input
+          type="text"
+          name=""
+          id="arrayBai6"
+          class="form-control"
+          value="9,1,2,23,6,76"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+        <button class="btn btn-primary" onclick="bai7()">Kết quả</button>
+        <h5 class="py-3" id="ketqua7"></h5>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./execercise.js"></script>
+  </body>
+</html>
